@@ -24,3 +24,9 @@
   .img2{
       margin-top: 20px;
   }
+
+  .goBack{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
