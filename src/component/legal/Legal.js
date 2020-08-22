@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import { Redirect } from "react-router-dom";
 
 const Legal = () => {
   const [formData, setFormData] = useState({
@@ -16,13 +17,20 @@ const Legal = () => {
 
   const { idType, idNumber, email, address, phone, eps } = formData;
 
+  const [redirect, setRedirect] = useState(null);
+
   const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    setRedirect("/pdf");
   };
+
+  if (redirect) {
+    return <Redirect to={redirect} />;
+  }
 
   return (
     <React.Fragment>
