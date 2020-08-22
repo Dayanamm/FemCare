@@ -1,67 +1,26 @@
-  .container2{
+.container{
     background-color: white;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 10x;
+    height: 100%;
+    width: 100%;
   }
 
-  .lineO{
-    border: 1px solid #0C2187;
+  .line{
+    border: 1px solid #B773AE;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-height: 90vh;
     width: 80%;
-    height: 90vh;
+    margin: 10%;
   }
 
-  .imgI{
+  .img2{
       margin-top: 20px;
-  }
-
-  @media (min-width: 992px) {
-    .lineO{
-      width: 85%;      
-    }
-
-    .rows{
-      display: flex;
-      flex-direction: row;
-    }
-
-    .imgI{
-      margin-top: 0px;
-      height: 200px;
-    }
-
-    .imgE{
-      height: 200px;
-    }
-
-    .SecondOption{
-      margin-left: 100px;
-    }
-
-    .subI{
-      font-size: 30px;
-      margin-top: 20px;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .lineO{
-      width: 95%;
-    }
-
-    .rows{
-      display: flex;
-      flex-direction: row;
-    }
-
-    .imgI{
-      margin-top: 0px;
-    }
   }
