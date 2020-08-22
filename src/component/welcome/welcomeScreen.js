@@ -18,7 +18,7 @@ class Welcome extends React.Component {
     }
 
     historyF() {
-      this.setState({ redirect: "/calculo"})
+      this.setState({ redirect: "/form"})
     }
 
     render() {

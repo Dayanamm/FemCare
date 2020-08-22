@@ -1,16 +1,14 @@
-  .container{
+  .container1{
     background-color: white;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 10x;
-    height: 100%;
-    width: 100%;
   }
 
-  .line{
-    border: 1px solid #B773AE;
+  .lineCalculo{
+    border: 1px solid #2FB9CF;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -18,11 +16,11 @@
     flex-direction: column;
     min-height: 90vh;
     width: 80%;
-    margin: 10%;
   }
 
   .title{
       margin-bottom: 40px;
+      margin: 0px 10px;
   }
 
   .lvlName{
@@ -32,6 +30,7 @@
   }
 
   .level{
+      margin-top: 20px;
       width: 80%;
       height: 30px;
       background-color:#C4C4C4;
@@ -47,9 +46,138 @@
 
   .next{
       margin-top: 50px;
-      background-color: blueviolet;
+      background-color: #2FB9CF;
       border-radius: 50px;
       width: 200px;
       height: 30px;
-      color: white
+      color: white;
+      border-width: 0px;
+  }
+
+  .texts{
+    margin: 0px 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .lineCalculo{
+      width: 85%;      
+    }
+
+    .level{
+      width: 60%;
+      height: 50px;
+      margin-top: 80px;
+    }
+
+    .title{
+      font-size: 30px;
+      margin: 0px 10px;
+    }
+
+    .advance{
+      width: 80%;
+      background-color: #FE6565;
+      height: 50px;
+      border-radius: 50px;
+    }
+
+    .texts{
+      font-size: 30px;
+    }
+
+    .lvlName{
+      font-size: 25px;
+      margin-bottom: 80px;
+    }
+
+    .next{
+      margin-top: 100px;
+      background-color: #2FB9CF;
+      border-radius: 50px;
+      height: 50px;
+      width: 300px;
+      border-width: 0px;
+      font-size: 25px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .lineCalculo{
+      width: 85%;      
+    }
+
+    .level{
+      width: 60%;
+      height: 50px;
+      margin-top: 80px;
+    }
+
+    .title{
+      font-size: 40px;
+      margin: 0px 10px;
+    }
+
+    .advance{
+      width: 80%;
+      background-color: #FE6565;
+      height: 50px;
+      border-radius: 50px;
+    }
+
+    .texts{
+      font-size: 40px;
+    }
+
+    .lvlName{
+      font-size: 25px;
+      margin-bottom: 80px;
+    }
+
+    .next{
+      margin-top: 100px;
+      background-color: #2FB9CF;
+      border-radius: 50px;
+      height: 50px;
+      width: 300px;
+      border-width: 0px;
+      font-size: 25px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .lineCalculo{
+      width: 95%;      
+    }
+
+    .level{
+      width: 50%;
+      height: 50px;
+    }
+
+    .title{
+      margin-bottom: 60px;
+      font-size: 40px;
+    }
+
+    .advance{
+      width: 80%;
+      background-color: #FE6565;
+      height: 50px;
+      border-radius: 50px;
+  }
+
+    .texts{
+      font-size: 40px;
+    }
+
+    .lvlName{
+      font-size: 20px;
+    }
+
+    .next{
+      margin-top: 50px;
+      background-color: #2FB9CF;
+      border-radius: 50px;
+      height: 50px;
+    }
   }
