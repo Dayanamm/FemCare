@@ -9,6 +9,10 @@ function App() {
         <div className="line">
           <img src={logo} className="App-logo" alt="logo"/>
         </div>
+        <div className="footer">
+          <p className="FooterText">By</p>
+          <p className="FooterText">FACCIÓN WAYÚU</p>
+        </div>
       </header>
     </div>
   );
