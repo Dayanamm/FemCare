@@ -14,7 +14,8 @@ body {
   display: flex;
   justify-content: center;
   margin: 40px;
-  color: #1e36a6;
+  color: #15277b;
+  font-weight: bold;
 }
 
 .inputs-form-container {
@@ -45,7 +46,7 @@ body {
 }
 
 .fieldset-label-modified {
-  color: #1e36a6;
+  color: #15277b;
 }
 
 .continue-button-modified {
@@ -195,7 +196,7 @@ body {
 
 @media (min-width: 1200px) {
   body {
-    background-image: url("../img/background-desktop.jpeg");
+    background-image: url("../img/image.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -237,6 +238,7 @@ body {
     justify-content: space-evenly;
     width: 360px;
     font-size: 18px;
+    background-color: #dededeab;
   }
 
   .container-button-modified {
