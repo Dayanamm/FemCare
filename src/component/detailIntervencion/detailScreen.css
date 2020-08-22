@@ -1,4 +1,4 @@
-.container{
+.containerD{
     background-color: white;
     min-height: 100vh;
     display: flex;
@@ -23,11 +23,11 @@
       color:#B643AA
   }
 
-  .goBack{
+  /* .goBack{
     position: absolute;
     top: 30px;
     right: 50px;
-  }
+  } */
 
   .box{
       height: 100px;
@@ -47,4 +47,25 @@
 
   .imgBlock{
       height: 200px;
+  }
+
+  @media (min-width: 992px) {
+    .line2{
+      width: 95%;      
+    }
+
+    .info{
+      font-size: 30px;
+    }
+
+    .box{
+      height: 150px;
+    }
+
+    h3{
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
   }

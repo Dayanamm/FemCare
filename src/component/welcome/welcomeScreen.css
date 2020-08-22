@@ -7,7 +7,7 @@
   }
   
   .line {
-    border: 1px solid #B773AE;
+    border: 1px solid #2FB9CF;
     border-radius: 20px;
     display: flex;
     flex: 1;
@@ -23,14 +23,14 @@
   }
   
   .App-header {
-    background-color: #E1BFDC;
+    background-color: white;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 10x;
-    color: white;
+    color: black;
   }
   
   @media (max-width: 600px) {
@@ -83,5 +83,12 @@
   
     .FooterText{
       font-size: 20px;
+    }
+
+    .App-header {
+      background-image: url("image.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }

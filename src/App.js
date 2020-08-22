@@ -10,22 +10,25 @@ import Opciones from "./component/opciones/opcionesScreen";
 import OpcionIntervencion from "./component/opcionIntervencion/intervencionScreen";
 import Advices from "./component/advices/Advices";
 import UserForm from "./component/form/UserForm";
-import DetailScreen from './component/detailIntervencion/detailScreen'
-
+import DetailScreen from "./component/detailIntervencion/detailScreen";
+import Legal from "./component/legal/Legal";
 
 export default function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/tutela">
+            <Legal />
+          </Route>
           <Route path="/opciones/intervencion/balon">
-            <DetailScreen/>
+            <DetailScreen />
           </Route>
           <Route path="/opciones/intervencion/manga">
-            <DetailScreen/>
+            <DetailScreen />
           </Route>
           <Route path="/opciones/intervencion/bypass">
-            <DetailScreen/>
+            <DetailScreen />
           </Route>
           <Route path="/opciones/consejos">
             <Advices />
