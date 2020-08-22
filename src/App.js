@@ -9,13 +9,16 @@ import {
 import Calculo from './component/calculo/calculoScreen'
 import Welcome from './component/welcome/welcomeScreen'
 import Opciones from './component/opciones/opcionesScreen'
+import OpcionIntervencion from './component/opcionIntervencion/intervencionScreen'
 
 export default function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          
+          <Route path="/opciones/intervencion">
+            <OpcionIntervencion/>
+          </Route>
           <Route path="/opciones">
             <Opciones/>
           </Route>
