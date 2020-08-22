@@ -112,7 +112,7 @@ const UserForm = (props) => {
               <Form.Control
                 type="text"
                 placeholder="Peso"
-                pattern="[0-9]*"
+                pattern="^[0-9]{1,2}([.][0-9]{1,2})?"
                 name="weight"
                 value={weight}
                 onChange={(e) => onChange(e)}
@@ -142,7 +142,7 @@ const UserForm = (props) => {
               <Form.Control
                 type="text"
                 placeholder="Altura"
-                pattern="[0-9]*"
+                pattern="^[0-9]{1,2}([.][0-9]{1,2})?$"
                 name="height"
                 value={height}
                 onChange={(e) => onChange(e)}
