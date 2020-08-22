@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,6 +12,7 @@ import Calculo from './calculoScreen'
 import Welcome from './component/welcome/welcomeScreen'
 
 export default function App() {
+
   return (
     <div className="App">
       <Router>
