@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.png';
+import logo from '../../img/logo.png';
 import './welcomeScreen.css';
 import { Redirect } from 'react-router-dom'
 
@@ -18,7 +18,7 @@ class Welcome extends React.Component {
     }
 
     historyF() {
-      this.setState({ redirect: "/calculo"})
+      this.setState({ redirect: "/form"})
     }
 
     render() {
