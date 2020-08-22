@@ -19,7 +19,7 @@ Finalmente, se ofrece como solución final mecanismos de protección constitucio
 ## 3. Prototipos de baja fidelidad 📝
 
 <figure>
-<img width="500px" src="./doc/BF1.jpg">
+<img width="500px" src="./doc/BF1.png">
 <figcaption>Primer Prototipo</figcaption>
 </figure>
 
