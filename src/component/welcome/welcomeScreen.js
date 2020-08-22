@@ -1,11 +1,32 @@
 import React from 'react';
 import logo from './logo.png';
 import './welcomeScreen.css';
+import { Redirect } from 'react-router-dom'
+
 
 class Welcome extends React.Component {
+
+    constructor(props) {
+      super(props);
+      this.state = { redirect: false };
+    }
+
+    componentDidMount(){
+      console.log(this.props)
+      
+      setTimeout(()=> this.historyF(), 2000)
+    }
+
+    historyF() {
+      this.setState({ redirect: "/calculo"})
+    }
+
     render() {
+      if (this.state.redirect) {
+        return <Redirect to={this.state.redirect} />
+      }
       return (
-        <header className="App-header">
+        <div className="App-header">
             <div className="line">
                 <img src={logo} className="App-logo" alt="logo"/>
             </div>
@@ -13,7 +34,7 @@ class Welcome extends React.Component {
                 <p className="FooterText">By</p>
                 <p className="FooterText">FACCIÓN WAYÚU</p>
             </div>
-        </header>
+        </div>
       );
     }
 }
