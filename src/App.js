@@ -12,12 +12,16 @@ import Advices from "./component/advices/Advices";
 import UserForm from "./component/form/UserForm";
 import DetailScreen from "./component/detailIntervencion/detailScreen";
 import Legal from "./component/legal/Legal";
+import TutelaPDF from "./component/pdf/PDF";
 
 export default function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/pdf">
+            <TutelaPDF />
+          </Route>
           <Route path="/tutela">
             <Legal />
           </Route>
