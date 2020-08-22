@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.png';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
