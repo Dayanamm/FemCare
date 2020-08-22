@@ -18,6 +18,10 @@ class Opciones extends React.Component {
     this.setState({ redirect: "/opciones/intervencion"})
   }
 
+  goDiaet(){
+    this.setState({ redirect: "/opciones/consejos"})
+  }
+
     render() {
         if (this.state.redirect) {
             return <Redirect to={this.state.redirect} />
@@ -27,7 +31,7 @@ class Opciones extends React.Component {
             <div className="lineO">
                 <div className="rows">
                     <div className="FirstOption">
-                      <img src={img1} className="imgE"/>
+                      <img src={img1} className="imgE" onClick={()=>this.goDiaet()}/>
                       <p className="subI">Ejercicio y dieta</p>
                     </div>
                     <div className="SecondOption">
