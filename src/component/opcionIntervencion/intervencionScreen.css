@@ -1,4 +1,4 @@
-.container{
+.containerI{
     background-color: white;
     min-height: 100vh;
     display: flex;
@@ -9,7 +9,7 @@
     width: 100%;
   }
 
-  .line{
+  .lineI{
     border: 1px solid #B773AE;
     border-radius: 20px;
     display: flex;
@@ -18,15 +18,68 @@
     flex-direction: column;
     min-height: 90vh;
     width: 80%;
-    margin: 10%;
   }
 
-  .img2{
-      margin-top: 20px;
+  .FirstI:hover{
+    cursor: pointer
+  }
+
+  .SecondI:hover{
+    cursor: pointer
+  }
+
+  .ThirdI:hover{
+    cursor: pointer
   }
 
   .goBack{
     position: absolute;
     top: 30px;
     right: 50px;
+  }
+
+  .goBack:hover{
+    cursor: pointer
+  }
+
+  @media (min-width: 992px) {
+    .lineI{
+      width: 90%;
+    }
+
+    .goBack{
+      top: 80px;
+      right: 80px;
+      font-size: 30px;
+    }
+
+    .imgG{
+      height: 200px;
+    }
+
+    .descripI{
+      font-size: 40px;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .goBack{
+      top: 35px;
+      right: 85px;
+      font-size: 30px;
+    }
+
+    .rowsI{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .SecondI{
+      margin-left: 30px;
+    }
+
+    .ThirdI{
+      margin-left: 30px;
+    }
   }
