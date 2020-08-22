@@ -20,12 +20,26 @@
     width: 80%;
   }
 
-  
+  .FirstI:hover{
+    cursor: pointer
+  }
+
+  .SecondI:hover{
+    cursor: pointer
+  }
+
+  .ThirdI:hover{
+    cursor: pointer
+  }
 
   .goBack{
     position: absolute;
     top: 30px;
     right: 50px;
+  }
+
+  .goBack:hover{
+    cursor: pointer
   }
 
   @media (min-width: 992px) {

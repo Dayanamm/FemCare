@@ -89,4 +89,29 @@
     background-size: cover;
     background-position: center;
   }
-}
+
+
+  
+  @media (min-width: 1200px) {
+    .line {
+      width: 96%;
+      margin: 2%;
+    }
+  
+    .App-logo {
+      width: 300px;
+    }
+  
+    .FooterText{
+      font-size: 20px;
+      color: white
+    }
+
+    .App-header {
+      background-image: url("../../img/image.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+

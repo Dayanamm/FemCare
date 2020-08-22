@@ -19,7 +19,16 @@
   }
 
   .imgI{
-      margin-top: 20px;
+    margin-top: 20px;
+    
+  }
+
+  .imgI:hover{
+    cursor: pointer
+  }
+
+  .imgE:hover{
+    cursor: pointer
   }
 
   @media (min-width: 992px) {
