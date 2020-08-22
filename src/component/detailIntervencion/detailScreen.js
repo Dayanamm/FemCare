@@ -135,7 +135,7 @@ class DetailScreen extends React.Component {
             return <Redirect to={this.state.redirect} />
         }
       return (
-        <div className='container'>
+        <div className='containerD'>
             <p className='goBack' onClick={()=>this.goBack()}>X</p>
             <div className="line2">
                 <img src={this.state.img1} className="imgBlock"/>

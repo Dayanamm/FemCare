@@ -23,13 +23,17 @@ class Opciones extends React.Component {
             return <Redirect to={this.state.redirect} />
         }
       return (
-        <div className='container'>
-            <div className="line">
-                <div>
-                    <img src={img1} className="img1"/>
-                    <p>Ejercicio y dieta</p>
-                    <img src={img2} className="img2" onClick={()=>this.goIntervention()}/>
-                    <p>Intervención bariátrica</p>
+        <div className='container2'>
+            <div className="lineO">
+                <div className="rows">
+                    <div className="FirstOption">
+                      <img src={img1} className="imgE"/>
+                      <p className="subI">Ejercicio y dieta</p>
+                    </div>
+                    <div className="SecondOption">
+                      <img src={img2} className="imgI" onClick={()=>this.goIntervention()}/>
+                      <p className="subI">Intervención bariátrica</p>
+                    </div>
                 </div>
             </div>
         </div>

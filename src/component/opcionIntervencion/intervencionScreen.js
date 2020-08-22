@@ -28,16 +28,22 @@ class OpcionIntervencion extends React.Component {
         return <Redirect to={this.state.redirect} />
       }
       return (
-        <div className='container'>
-            <div className="line">
+        <div className='containerI'>
+            <div className="lineI">
                 <p className='goBack' onClick={()=>this.goBack()}>X</p>
-                <div>
-                    <img src={img1} className="img1" onClick={()=>this.viewDetail('balon')}/>
-                    <p>Balón gastríco.</p>
-                    <img src={img2} className="img2" onClick={()=>this.viewDetail('manga')}/>
-                    <p>Manga gastrica.</p>
-                    <img src={img3} className="img3" onClick={()=>this.viewDetail('bypass')}/>
-                    <p>Bypass gastrico.</p>
+                <div className="rowsI">
+                    <div className="FirstI">
+                      <img src={img1} className="imgG" onClick={()=>this.viewDetail('balon')}/>
+                      <p className="descripI">Balón gastríco.</p>
+                    </div>
+                    <div className="SecondI">
+                      <img src={img2} className="imgG" onClick={()=>this.viewDetail('manga')}/>
+                      <p className="descripI">Manga gastrica.</p>
+                    </div>
+                    <div className="ThirdI">
+                      <img src={img3} className="imgG" onClick={()=>this.viewDetail('bypass')}/>
+                      <p className="descripI">Bypass gastrico.</p>
+                    </div>
                 </div>
             </div>
         </div>
