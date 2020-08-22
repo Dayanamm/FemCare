@@ -1,87 +1,92 @@
-  .App-logo {
-    width: 200px;
-  }
-  
-  .FooterText{
-    font-size: 14px;
-  }
-  
+.App-logo {
+  width: 200px;
+}
+
+.FooterText {
+  font-size: 14px;
+}
+
+.line {
+  border: 1px solid #2fb9cf;
+  border-radius: 20px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 10%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 50px;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10x;
+  color: black;
+}
+
+@media (max-width: 600px) {
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 768px) {
   .line {
-    border: 1px solid #B773AE;
-    border-radius: 20px;
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin: 10%;
+    width: 90%;
+    margin: 5%;
   }
-  
-  .footer {
-    position: absolute;
-    bottom: 50px;
+
+  .App-logo {
+    width: 250px;
   }
-  
+
+  .FooterText {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .line {
+    width: 90%;
+    margin: 5%;
+  }
+
+  .App-logo {
+    width: 500px;
+  }
+
+  .FooterText {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .line {
+    width: 96%;
+    margin: 2%;
+  }
+
+  .App-logo {
+    width: 300px;
+  }
+
+  .FooterText {
+    font-size: 20px;
+  }
+
   .App-header {
-    background-color: #E1BFDC;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 10x;
-    color: white;
+    background-image: url("image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  
-  @media (max-width: 600px) {
-  
-  }
-  
-  @media (min-width: 600px) {
-    
-  }
-  
-  @media (min-width: 768px) {
-    .line {
-      width: 90%;
-      margin: 5%;
-    }
-  
-    .App-logo {
-      width: 250px;
-    }
-  
-    .FooterText{
-      font-size: 30px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .line {
-      width: 90%;
-      margin: 5%;
-    }
-  
-    .App-logo {
-      width: 500px;
-    }
-  
-    .FooterText{
-      font-size: 40px;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .line {
-      width: 96%;
-      margin: 2%;
-    }
-  
-    .App-logo {
-      width: 300px;
-    }
-  
-    .FooterText{
-      font-size: 20px;
-    }
-  }
+}

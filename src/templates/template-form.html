@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="template-form.css" />
+    <title>FemCare</title>
+  </head>
+  <body>
+    <div class="form-container container">
+      <div class="head-form">
+        Queremos conocerte, <br />
+        ingresa tus datos.
+      </div>
+      <form>
+        <div class="inputs-form-container">
+          <div class="form-group row">
+            <div class="col-1200-33 col-992-33 col-768-33 col-576-33">
+              <input
+                placeholder="Nombre"
+                type="text"
+                id="firstName"
+                class="form-control form-input"
+              />
+            </div>
+          </div>
+          <div class="form-group row container-input-modified">
+            <div class="col-1200-33 col-992-33 col-768-33 col-576-33">
+              <input
+                placeholder="Apellido"
+                type="text"
+                id="lastName"
+                class="form-control form-input"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-1200-33 col-992-33 col-768-33 col-576-33">
+              <input
+                placeholder="Edad"
+                type="text"
+                id="age"
+                class="form-control form-input"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-auto">
+              <select
+                id="weightMesureType"
+                class="mr-sm-2 custom-select modified-select"
+              >
+                <option value="kg">Kg</option>
+                <option value="lbs">Lbs</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <div class="col-sm-10">
+                <input
+                  placeholder="Peso"
+                  type="text"
+                  id="weight"
+                  class="form-control form-input form-input-w-h"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-auto">
+              <select
+                id="heigthMeasureType"
+                class="mr-sm-2 custom-select modified-select"
+              >
+                <option value="cms">Cm</option>
+                <option value="feet">Fts</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <div class="col-sm-10">
+                <input
+                  placeholder="Altura"
+                  type="text"
+                  id="height"
+                  class="form-control form-input form-input-w-h"
+                />
+              </div>
+            </div>
+          </div>
+          <fieldset>
+            <div class="form-group row fieldset-label-modified">
+              <label
+                class="form-label col-form-label col-1200-33 col-992-33 col-768-33 col-576-33"
+                >¿A sufrido alguna enfermedad ...?</label
+              >
+              <div class="col-sm-2">
+                <div class="form-check">
+                  <input
+                    name="diseaseRadios"
+                    type="radio"
+                    id="diseaseRadiosNo"
+                    class="form-check-input"
+                    checked=""
+                  /><label
+                    title=""
+                    for="diseaseRadiosNo"
+                    class="form-check-label"
+                    >No</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    name="diseaseRadios"
+                    type="radio"
+                    id="diseaseRadiosYes"
+                    class="form-check-input"
+                  /><label
+                    title=""
+                    for="diseaseRadiosYes"
+                    class="form-check-label"
+                    >Si</label
+                  >
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10 offset-sm-2 container-button-modified">
+            <button
+              type="submit"
+              class="btn btn-primary continue-button-modified"
+            >
+              Continuar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
