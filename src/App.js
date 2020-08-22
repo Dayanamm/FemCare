@@ -1,19 +1,24 @@
 import React from 'react';
-import logo from './logo.png';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import Welcome from './component/welcome/welcomeScreen'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="line">
-          <img src={logo} className="App-logo" alt="logo"/>
-        </div>
-        <div className="footer">
-          <p className="FooterText">By</p>
-          <p className="FooterText">FACCIÓN WAYÚU</p>
-        </div>
-      </header>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Welcome/>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
