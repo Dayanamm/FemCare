@@ -18,6 +18,11 @@ Finalmente, se ofrece como solución final mecanismos de protección constitucio
 
 ## 3. Prototipos de baja fidelidad 📝
 
+<figure>
+<img width="500px" src="./doc/BF1.jpg">
+<figcaption>Primer Prototipo</figcaption>
+</figure>
+
 ## 4. Prototipos de alta fidelidad
 
 
