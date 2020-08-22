@@ -5,7 +5,6 @@ body {
 
 .form-container {
   width: 100%;
-  /* height: 600px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -15,7 +14,8 @@ body {
   display: flex;
   justify-content: center;
   margin: 40px;
-  color: #1e36a6;
+  color: #15277b;
+  font-weight: bold;
 }
 
 .inputs-form-container {
@@ -46,7 +46,7 @@ body {
 }
 
 .fieldset-label-modified {
-  color: #1e36a6;
+  color: #15277b;
 }
 
 .continue-button-modified {
@@ -130,15 +130,23 @@ body {
   }
 
   .form-input {
-    width: 350px;
+    width: 400px;
     font-size: 20px;
+  }
+
+  .container-input-modified {
+    width: 400px;
+  }
+
+  .form-input-w-h {
+    width: 170px;
   }
 
   .inputs-form-container fieldset {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 60px;
+    margin-left: 0;
   }
 
   .col-auto {
@@ -154,6 +162,7 @@ body {
     margin-top: 30px;
     display: flex;
     align-items: inherit;
+    justify-content: space-evenly;
   }
 
   .continue-button-modified {
@@ -183,27 +192,18 @@ body {
     flex-basis: 33.333333%;
     max-width: 33.333333%;
   }
-  .nav-bar {
-    margin-top: 130px;
-  }
-  .pie-chart {
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    height: 400px;
-  }
-  .information-table img {
-    height: 700px;
-  }
-  .social-icons img {
-    width: 60px;
-    height: 60px;
-  }
 }
 
 @media (min-width: 1200px) {
+  body {
+    background-image: url("../img/image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   .container {
-    max-width: 1140px;
+    max-width: 1440px;
   }
   .col-1200-66 {
     flex-basis: 66.666667%;
@@ -217,10 +217,32 @@ body {
     flex-basis: 33.333333%;
     max-width: 33.333333%;
   }
-  .alphabethic-list-container {
+
+  .form-input {
+    width: 700px;
+    font-size: 20px;
+  }
+
+  .container-input-modified {
+    width: 700px;
+  }
+
+  .form-input-w-h {
+    width: 170px;
+  }
+
+  .fieldset-label-modified {
+    margin-top: 30px;
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
+    align-items: inherit;
+    justify-content: space-evenly;
+    width: 360px;
+    font-size: 18px;
+    background-color: #dededeab;
+  }
+
+  .container-button-modified {
+    justify-content: center;
+    margin-left: 150px;
   }
 }
