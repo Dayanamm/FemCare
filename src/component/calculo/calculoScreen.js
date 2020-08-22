@@ -26,13 +26,13 @@ class Calculo extends React.Component {
         return <Redirect to={this.state.redirect} />
       }
       return (
-        <div className='container1'>
-          <div className="lineCalculo">
+        <div className='container'>
+          <div className="line">
             <p className="title">Según tu Indice de Masa Corporal tienes {this.state.result}.</p>
             <div className="level"><div className="advance" ref="advance"></div></div>
             <p className="lvlName">Nivel de obesidad {this.state.percent}%</p>
-            <p className="texts">{this.state.message1}</p>
-            <p className="texts">{this.state.message2}</p>
+            <p>{this.state.message1}</p>
+            <p>{this.state.message2}</p>
             <button className="next" onClick={() => this.continue()}>
               Continuar
             </button>

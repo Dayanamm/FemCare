@@ -1,46 +1,20 @@
-import React, { useState, Component } from "react";
+import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { calcIMC } from "../../actions/imc";
-import { Redirect } from "react-router-dom";
 
 const UserForm = (props) => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    age: "",
-    weight: "",
-    weightType: "",
-    height: "",
-    heightType: "",
-  });
+  const { cancel, errors, submit } = props;
 
-  const [redirect, setRedirect] = useState(null);
+  function handleSubmit(event) {
+    event.preventDefault();
+    //submit();
+  }
 
-  const {
-    firstName,
-    lastName,
-    age,
-    weight,
-    weightType,
-    height,
-    heightType,
-  } = formData;
-
-  const onChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    const imc = calcIMC(weight, weightType, height, heightType);
-    setRedirect("/calculo?imc=" + imc);
-  };
-
-  if (redirect) {
-    return <Redirect to={redirect} />;
+  function handleCancel(event) {
+    event.preventDefault();
+    //cancel();
   }
 
   return (
@@ -51,44 +25,22 @@ const UserForm = (props) => {
           <h2>Ingresa tus datos</h2>
         </Col>
       </Row>
-      <Form onSubmit={(e) => onSubmit(e)}>
+      <Form>
         <Form.Group as={Row} controlId="firstName">
           <Col sm={10}>
-            <Form.Control
-              type="text"
-              placeholder="Nombre"
-              name="firstName"
-              value={firstName}
-              onChange={(e) => onChange(e)}
-              required
-            />
+            <Form.Control type="text" placeholder="Nombre" />
           </Col>
         </Form.Group>
 
         <Form.Group as={Row} controlId="lastName">
           <Col sm={10}>
-            <Form.Control
-              type="text"
-              placeholder="Apellido"
-              name="lastName"
-              value={lastName}
-              onChange={(e) => onChange(e)}
-              required
-            />
+            <Form.Control type="text" placeholder="Apellido" />
           </Col>
         </Form.Group>
 
         <Form.Group as={Row} controlId="age">
           <Col sm={10}>
-            <Form.Control
-              type="text"
-              pattern="[0-9]*"
-              placeholder="Edad"
-              name="age"
-              value={age}
-              onChange={(e) => onChange(e)}
-              required
-            />
+            <Form.Control type="text" placeholder="Edad" />
           </Col>
         </Form.Group>
 
@@ -98,9 +50,6 @@ const UserForm = (props) => {
               as="select"
               className="mr-sm-2"
               id="weightMesureType"
-              name="weightType"
-              value={weightType}
-              onChange={(e) => onChange(e)}
               custom
             >
               <option value="kg">Kg</option>
@@ -109,15 +58,7 @@ const UserForm = (props) => {
           </Col>
           <Col xs="auto">
             <Col sm={10}>
-              <Form.Control
-                type="text"
-                placeholder="Peso"
-                pattern="^[0-9]{1,2}([.][0-9]{1,2})?"
-                name="weight"
-                value={weight}
-                onChange={(e) => onChange(e)}
-                required
-              />
+              <Form.Control type="text" placeholder="Peso" />
             </Col>
           </Col>
         </Form.Group>
@@ -128,26 +69,15 @@ const UserForm = (props) => {
               as="select"
               className="mr-sm-2"
               id="heigthMeasureType"
-              name="heightType"
-              value={heightType}
-              onChange={(e) => onChange(e)}
               custom
             >
-              <option value="mts">Mts</option>
+              <option value="cms">Cm</option>
               <option value="feet">Fts</option>
             </Form.Control>
           </Col>
           <Col xs="auto">
             <Col sm={10}>
-              <Form.Control
-                type="text"
-                placeholder="Altura"
-                pattern="^[0-9]{1,2}([.][0-9]{1,2})?$"
-                name="height"
-                value={height}
-                onChange={(e) => onChange(e)}
-                required
-              />
+              <Form.Control type="text" placeholder="Altura" />
             </Col>
           </Col>
         </Form.Group>
